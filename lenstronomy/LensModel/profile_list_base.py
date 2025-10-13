@@ -5,6 +5,7 @@ __all__ = ["ProfileListBase"]
 
 _SUPPORTED_MODELS = [
     "ARC_PERT",
+    "ARSINH",
     "BLANK_PLANE",
     "CHAMELEON",
     "CNFW",
@@ -330,6 +331,10 @@ def lens_class(
         from lenstronomy.LensModel.Profiles.blank_plane import BlankPlane
 
         return BlankPlane(**profile_kwargs)
+    elif lens_type == "ARSINH":
+        from lenstronomy.LensModel.Profiles.arsinh import Arsinh
+
+        return Arsinh(**profile_kwargs)
     elif lens_type == "CHAMELEON":
         from lenstronomy.LensModel.Profiles.chameleon import Chameleon
 
