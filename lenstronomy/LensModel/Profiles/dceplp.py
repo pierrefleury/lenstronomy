@@ -43,7 +43,7 @@ class DCEPLP(LensProfileBase):
         "outer_slope": 10,
         "e1": 0.5,
         "e2": 0.5,
-        "N2_drift": 0,
+        "N2_drift": 1,
         "phi_drift": 2*np.pi,
         "center_x": 100,
         "center_y": 100,
