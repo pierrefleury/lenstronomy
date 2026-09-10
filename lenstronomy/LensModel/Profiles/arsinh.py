@@ -3,7 +3,6 @@ __author__ = "pierrefleury"
 import numpy as np
 
 from lenstronomy.LensModel.Profiles.base_profile import LensProfileBase
-#from scipy.special import hyp2f1
 
 __all__ = ["Arsinh"]
 
@@ -103,6 +102,7 @@ class Arsinh(LensProfileBase):
         alpha_y = f * y_
         
         return alpha_x, alpha_y
+
 
     def hessian(self, x, y, theta_E, theta_c, center_x=0, center_y=0):
         """
