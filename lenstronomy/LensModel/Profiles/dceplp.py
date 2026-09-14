@@ -206,7 +206,7 @@ class DCEPLP(LensProfileBase):
                 XED        = x * ED_x + y * ED_y
                 DED        = drift_x * ED_x + drift_y * ED_y
 
-                denom = (1 + DED) * zeta - XED
+                denom = (1 - DED) * zeta + XED
 
                 zeta_xx = (E_xx - ED_x * zeta_x - ED_x * zeta_x - (1 - DED) * zeta_x * zeta_x) / denom
                 zeta_xy = (E_xy - ED_x * zeta_y - ED_y * zeta_x - (1 - DED) * zeta_x * zeta_y) / denom
